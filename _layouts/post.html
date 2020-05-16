@@ -4,3 +4,21 @@ layout: layout
 
 {% assign __ = site.data.languages[site.language] %}
 {% include post.html %}
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+var gitalk = new Gitalk({
+  clientID: '29d68a8c85c853efcc29',
+  clinetSecret: '5d2582f77774dbad2a5ff0a775f03ba1c7ec1851',
+  repo: 'willendless.github.io',
+  owner: 'Willendless',
+  admin: ['Willendless'],
+  id: window.location.pathname,
+  distractionFreeMode: false    // Facebook-like distraction free mode
+});
+
+gitalk.render('gitalk-container');
+</script>
