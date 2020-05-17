@@ -8,8 +8,6 @@ layout: layout
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
 
-<script src="../js/md5.min.js"></script>
-
 <div id="gitalk-container"></div>
 <script type="text/javascript">
 var gitalk = new Gitalk({
@@ -18,7 +16,7 @@ var gitalk = new Gitalk({
   repo: 'willendless.github.io',
   owner: 'Willendless',
   admin: ['Willendless'],
-  id: md5(window.location.pathname),
+  id: window.location.pathname.substr(0, 50),
   distractionFreeMode: false    // Facebook-like distraction free mode
 });
 
