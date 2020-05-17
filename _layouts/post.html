@@ -16,7 +16,7 @@ var gitalk = new Gitalk({
   repo: 'willendless.github.io',
   owner: 'Willendless',
   admin: ['Willendless'],
-  id: window.location.pathname,
+  id: decodeURI(window.location.pathname),
   distractionFreeMode: false    // Facebook-like distraction free mode
 });
 
