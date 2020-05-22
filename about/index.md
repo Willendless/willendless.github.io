@@ -3,4 +3,5 @@ layout: page
 type: about
 ---
 
-Building...
++ ECNUer, junior student, majoring in *Software Engineering*.
++ Interested in system direction.
