@@ -343,4 +343,4 @@ main函数位于[arch/x86/boot/main.c](https://github.com/torvalds/linux/blob/v4
 
 + BIOS: 复位向量给出的第一条指令（`jmp`）跳转到BIOS。
 + bootloader(GRUB 2): 启动扇区为boot.img，之后跟着的是core.img。其会遵守kernel boot protocol，将内核装载到内存（一般为0x10000）处。
-+ 内核实模式代码: GRUB会将控制权交给内核实模式代码，其会设置各个段寄存器的值、初始化堆、栈、BSS段等，共占用64KB空间(包括代码以及boot sector)。
++ 内核实模式代码: GRUB会将控制权交给内核实模式代码，其会设置各个段寄存器的值、初始化堆、栈、BSS段等，共占用64KB空间(包括代码以及boot sector)。boot sector最开始两个字节为`0x4d`和`0x5a`，即`MZ`表示MS-DOS header。
