@@ -336,3 +336,11 @@ calll main
 ```
 
 main函数位于[arch/x86/boot/main.c](https://github.com/torvalds/linux/blob/v4.16/arch/x86/boot/main.c)中。
+
+## 9. 小结
+
+总结一下，上电启动阶段主要涉及三个东西
+
++ BIOS: 复位向量给出的第一条指令（`jmp`）跳转到BIOS。
++ bootloader(GRUB 2): 启动扇区为boot.img，之后跟着的是core.img。其会遵守kernel boot protocol，将内核装载到内存（一般为0x10000）处。
++ 内核实模式代码: GRUB会将控制权交给内核实模式代码，其会设置各个段寄存器的值、初始化堆、栈、BSS段等，共占用64KB空间(包括代码以及boot sector)。
