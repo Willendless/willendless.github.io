@@ -1,9 +1,11 @@
 ---
 layout: "post"
 author: LJR
-category: Linux
+category: 操作系统
 title: 《Linux Inside》kernel booting process (一)
 mathjax: true
+tags:
+  - Linux
 ---
 
 ## 1. 术语
