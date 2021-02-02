@@ -76,7 +76,7 @@ unsafe {
 + $<<, >>$能够移位超过自身类型位数
   + debug模式->panic
   + release模式->类型位数取模
-+ $/, \%$ $INT_MIN-1$ panic
++ $/, \%$ INT_MIN-1会导致panic
 
 #### 2.3.1. 整型溢出的处理
 
