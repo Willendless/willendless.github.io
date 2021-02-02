@@ -200,7 +200,7 @@ fn main() {
 }
 ```
 
-### Transmute
+### 2.8. Transmute
 
 `transmute<T, U>`将一个为`T`类型的值重新以类型`U`解释它。注意，`T`和`U`的类型应当相同。
 
