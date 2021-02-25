@@ -9,26 +9,26 @@ tags:
 
 > what you don't use, you don't pay for. what you do use, you couldn't hand code any better.
 
-## 类型安全
+## 1. 类型安全
 
 如果一个程序不存在未定义行为，则认为该程序是良定义的(well-defined)。如果一个语言的安全性检查能保证每一个用其写的程序是良定义的，则认为该语言是类型安全的。安全性检查可能发生在运行时也可能发生在编译期。
 
-## 内存安全
+## 2. 内存安全
 
 不存在对未定义的内存的访问。
 
 - 空间安全（spatial safety）：没有越界(out of bounds)访问。
 - 时间安全（temporal safety）：在对象生命周期前后不存在对该对象的访问。
 
-## rusty类型
+## 3. rusty类型
 
-### linearity
+### 3.1. linearity
 
 即所有权系统(ownership)。
 
 owner和move语义：对每一个给定对象仅能存在一个绑定，对象的所有权通过`=`赋值符号传递。
 
-### Memory Safety and Race Freedom
+### 3.2. Memory Safety and Race Freedom
 
 对每一个存储位置需要保证满足以下其中一点：
 
@@ -48,7 +48,7 @@ clear(&mut x);
 let z = *y;
 ```
 
-### (Re)borrowing
+### 3.3. (Re)borrowing
 
 borrow即创建引用。reborrow即通过已经存在的引用创建引用。
 
