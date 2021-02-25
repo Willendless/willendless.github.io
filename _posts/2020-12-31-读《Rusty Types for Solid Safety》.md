@@ -3,6 +3,8 @@ layout: "post"
 author: LJR
 title: 读《Rusty Types for Solid Safety》笔记
 category: 编程语言
+tags:
+    - rust
 ---
 
 > what you don't use, you don't pay for. what you do use, you couldn't hand code any better.
