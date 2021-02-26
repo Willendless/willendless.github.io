@@ -97,7 +97,7 @@ x = 2;
 // drop(x); free("World!")
 ```
 
-![]()
+![rust1.png](https://i.loli.net/2021/02/26/mkjBCz8ey1q9pwL.png)
 
 ## 5. Safety rule: {shared} + xor mutable references
 
