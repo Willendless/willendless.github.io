@@ -1,7 +1,7 @@
 ---
 layout: "post"
 author: LJR
-title: unsafe rust
+title: Rust（三）Unsafe Rust
 category: 编程语言
 mathjax: true
 tags:
