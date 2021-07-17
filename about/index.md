@@ -3,6 +3,6 @@ layout: page
 type: about
 ---
 
-+ ECNUer, senior student, majoring in *Software Engineering*.
++ Incoming master student at MSIN@CMU
 + Interested in system direction.
-+ Liked reading poems and my favorite poet is [Xin, Qiji](https://en.wikipedia.org/wiki/Xin_Qiji).
++ Like reading poems and my favorite poet is [Xin, Qiji](https://en.wikipedia.org/wiki/Xin_Qiji).
