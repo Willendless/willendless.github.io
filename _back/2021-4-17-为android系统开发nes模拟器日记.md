@@ -273,6 +273,8 @@ non-maskable中断，当V-Blank发生在每一帧结束时由PPU生成。NMI发�
 
 这两个寻址模式的区别在于对操作数使用索引寄存器还是对操作数给出的值使用索引寄存器。
 
+**注：**这里的寻的地址可以是操作数的地址，也可以是直接作为例如跳转指令、分支指令的目标地址。
+
 ## 3. 参考
 
 + [nes_ebook](https://bugzmanov.github.io/nes_ebook/index.html)
